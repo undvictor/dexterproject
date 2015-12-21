@@ -5,8 +5,28 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-       <% include ../templates/nav %>
+
+      
+        <div id="left-sidebar">
+              <div id="header">
+                <h1><%= title %></h1>
+                <% include ../templates/header %>
+                </div>
+            <% include ../templates/nav %>
+        </div>
+        
+        <div id="main-content">
+          <p>Welcome to <%= title %></p>
+
+        </div>
+
+        <div id="right-sidebar">
+        <p>Message 1</p>
+        <p>Message 2</p>
+        <p>Message 3</p>
+        <p>Message 4</p>
+        
+        </div>
+
   </body>
 </html>

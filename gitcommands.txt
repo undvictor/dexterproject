@@ -1,0 +1,5 @@
+How to use git
+git pull
+git add -A
+git commit -m "my first git commit"
+git push
