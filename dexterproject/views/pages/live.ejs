@@ -3,8 +3,10 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/messages.css' />
+    <script src="/javascripts/messages.js"></script>
   </head>
-  <body>
+  <body onload ="process()">
 
       
         <div id="left-sidebar">
@@ -16,15 +18,12 @@
         </div>
         
         <div id="main-content">
-          <p>Welcome to <%= title %></p>
+          <% include ../templates/live_graph %>
 
         </div>
 
         <div id="right-sidebar">
-        <p>Message 1</p>
-        <p>Message 2</p>
-        <p>Message 3</p>
-        <p>Message 4</p>
+        <divid id ="theD"/>
         
         </div>
 

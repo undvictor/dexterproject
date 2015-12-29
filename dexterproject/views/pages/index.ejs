@@ -1,23 +1,32 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <% include ../templates/head %>
-</head>
-<body class="container">
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/messages.css' />
+    <script src="/javascripts/messages.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body onload ="process()">
 
-    <header>
-        <% include ../templates/header %>
-    </header>
-
-    <main>
-        <div class="jumbotron">
-            <h1>This is great</h1>
-            <p>Welcome to templating using EJS</p>
+      
+        <div id="left-sidebar">
+              <div id="header">
+                <h1><%= title %></h1>
+                <% include ../templates/header %>
+                </div>
+            <% include ../templates/nav %>
         </div>
-    </main>
+        
+        <div id="main-content">
+          <% include ../templates/map %>
 
-  
-    
-</body>
+        </div>
+
+        <div id="right-sidebar">
+        <divid id ="theD"/>
+        
+        </div>
+
+  </body>
 </html>
